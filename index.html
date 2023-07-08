@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title> WEB App 3</title>
+		<style>
+			*{
+				font-size:50px;
+			 }
+			
+			body{
+				background-color:azure;
+			}
+		</style>
+		<script>
+			function colorme(){
+				
+				event.preventDefault();
+				let colors=["red","green","blue","gray","brown","purple","pink","orange","white","yellow"];
+				let c=parseInt(Math.random()*colors.length);
+				document.body.style.background=colors[c];
+			}	
+		</script>
+	</head>
+	<body>
+		<h1>HOLI HAIN....</h1>
+		<form onsubmit="colorme()">
+			<input type="submit" value="color me"/>
+		</form>
+	</body>
+</html>
